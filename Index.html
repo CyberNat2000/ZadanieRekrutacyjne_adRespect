@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UFT-8">
+    <title>glarddesign</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="unpkg.com_masonry-layout@4.2.2_dist_masonry.pkgd.js"></script>
+    <script src="code.js"></script>
+</head>
+<body class="m-0">
+    <nav class="bg-white font-normal font-inter py-6 m-auto text-center flex w-4/5 h justify">
+        <img src="giarddesign.svg"/>
+        <table>
+            <tr class="gap-12 flex fs-15">
+                
+                <td id="Oferta" onclick="Oferta();"><p>Oferta <img src="Icon.svg"/></p>
+                <div class="Oferta-menu" id="Oferta02">
+                    <p class="m-0">Placeholder</p>
+                    <p class="m-0">Placeholder</p>
+                    <p class="m-0">Placeholder</p>
+                    <p class="m-0">Placeholder</p>
+                </div></td>
+                <td><p>O firmie</p></td>
+                <td><p>Realizacje</p></td>
+                <td><p>Kontakt</p></td>
+                <td onclick="Szukaj();"><img src="Icon 01.svg"/>
+                    <div id="Szukaj" style="display: none;">
+                        <form method="get">               
+                        <input type="text" name="S"><a href="./Search"><button class="bg-green-800 text-grey border-radius-200">Szukaj</button></a>
+                        </form> 
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </nav>
+    <!--intro-->
+    <div class="bg-beige h-11/12 m-0 w-full flex justify-flexend gap-16">
+        <span class="flex-col w-5/12 pt-10 gap-18">
+            <span>
+            <h1 class="font-mono fs-60 font-medium">Nowoczesna aranżacja <br/>Twojego ogrodu</h1>
+            <p class="fs-16 font-inter">Marka GiardDesign to wieloletnie doświadczenie i wysoka estetyka realizacji. Oferujemy kompleksowy zakres usługę z indywidualnym podejściem do każdego projektu.</p>
+            </span>
+            <span class="gap-9 flex">
+                <button class="bg-green-800 text-grey border-radius-200 px-6 py-3 border-none fs-16 button01">Skontaktuj się z nami</button>
+                <a href="#realizacje"><button class="bg-beige text-green-800 border-green-800 border-solid border-radius-200 px-6 py-3 fs-16 button02">Zobacz nasze realizacje <img src="Vector.svg" height="16px" width="16px"/></button></a>
+            </span>
+        </span>
+        <img width="50%" height="740px" class="flex float-right bg-fixed bgIntro" id="Photo">
+        <div class="Przyciski flex flexstart">
+            <div onclick="Left();"> <img src="Left.svg"></div>
+            <div onclick="Right();"> <img src="Right.svg"></div>
+        </div>
+    </div>
+    <!--oferta-->
+    <div class="bg-grey pb-40 pt-30 gap-24 align-item-center flex-col">
+        <span class="gap-4 flex-col w-3/5 align-item-center flexstart">
+            <p class="text-green-800 fs-12 font-inter">Oferta</p>
+            <span class="gap-8 flex-col w-3/5">
+                <h1 class="font-mono fs-48 font-medium m-0">Działamy <i>kompleksowo</i></h1>
+                <p class="fs-16 font-inter m-0 flex-col">Oferujemy kompletną obsługę inwestycji terenów zielonych. Projektujemy nowoczesne ogrody przydomowe oraz rezydencjonalne. Stworzymy dla Ciebie projekt, zwizualizujemy go i wcielimy w życie, a na każdym etapie posłużymy radą i wieloletnim doświadczeniem. </p>
+            </span>
+        </span>
+            <span class="flex px-22 gap-16">
+                <span class="flex justify flexstart bg-white w-1/4 h-80 br-28 px-10 py-12 align-item-center flex-col button03">
+                    <span class="gap-8 flex-col flexstart">
+                        <img width="40px" height="40px" src="Icon 01.png"/></a>
+                        <span class="flex-col gap-3 flexstart">
+                            <h2 class="m-0 fs-28 font-mono font-medium">Projekty</h2>
+                            <p class="m-0 fs-14 font-inter">Zaprojektujemy Twój ogród w nowoczesnym stylu i z najlepszym wykorzystaniem istniejącej przestrzeni.</p>
+                        </span>
+                    </span>
+                    <button class="text-green-800 bg-white border-b border-b-green-800 border-x-0 border-t-0 gap-2.5 fs-16 font-inter border-solid flex align-item-center"><p class="m-0">Dowiedz się więcej</p><img src="GreenVector.svg"></button>
+                </span>
+                <span class="flex justify flexstart bg-white w-1/4 h-80 br-28 px-10 py-12 align-item-center flex-col button03">
+                    <span class="gap-8 flex-col flexstart">
+                        <img width="48px" height="29px" src="Icon 02.png"/>
+                        <span class="flex-col gap-3 flexstart">
+                            <h2 class="m-0 fs-28 font-mono font-medium">Wizualizacje</h2>
+                            <p class="m-0 fs-14 font-inter">Przedstawimy Ci projekty koncepcyjne w postaci wirtualnego spaceru animowanego w technologii 3D.</p>
+                        </span>
+                    </span>
+                    <button class="text-green-800 bg-white border-b border-b-green-800 border-x-0 border-t-0 gap-2.5 fs-16 font-inter border-solid flex align-item-center"><p class="m-0">Dowiedz się więcej</p><img src="GreenVector.svg"></button>
+                </span>
+                <span class="flex justify flexstart bg-white w-1/4 h-80 br-28 px-10 py-12 align-item-center flex-col button03">
+                    <span class="gap-8 flex-col flexstart">
+                        <img width="40px" height="40px" src="Icon 03.png"/>
+                        <span class="flex-col gap-3 flexstart">
+                            <h2 class="m-0 fs-28 font-mono font-medium">Realizacje</h2>
+                            <p class="m-0 fs-14 font-inter">Zrealizujemy Twoje marzenie przy użyciu najnowszych rozwiązań i zaawansowanych technologii.</p>
+                        </span>
+                    </span>
+                    <button class="text-green-800 bg-white border-b border-b-green-800 border-x-0 border-t-0 gap-2.5 fs-16 font-inter border-solid flex align-item-center"><p class="m-0">Dowiedz się więcej</p><img src="GreenVector.svg"></button>
+                </span>
+            </span>
+        </span>
+    </div>
+    <!--O firmie-->
+    <div class="flex align-item-center gap-16 bg-green-800 text-grey">
+        <img width="150%" height="720px" class="bgOFirmie"/>
+        <span class="flex-col align-item-start gap-18">
+            <span class="gap-4">
+                <p class="font-inter fs-12 m-0">O firmie</p>
+                <span class="flex-col gap-10">
+                    <h1 class="font-mono fs-48 font-medium">Tworzymy <br>z <i>pasją</i></h1>
+                 <p class="font-inter fs-16">Każdy projekt to nowe wyzwanie. Dlatego nasz zespół tworzą wykwalifikowani projektanci oraz architekci, których zadaniem jest rozpoznanie i realizacja potrzeb każdego Klienta. Nasza specjalizacja to przestrzenie nowoczesne, które charakteryzuje minimalizm, geometria i elegancka prostota. Tworzymy ogrody małoobsługowe, dostosowane do współczesnego trybu życia.</p>
+                </span>
+            </span>
+            <button class="text-grey fs-16 bg-green-800 border-solid border border-grey border-radius-200 px-5.5 pb-3.5 pt-3 button04 flexstart flex gap-2 w-48">Poznaj nas bliżej<img width="16px" height="16px" src="GreyVector.svg"/></button>
+        </span>
+    </div>
+    <!--Realizacje-->
+    <div class="flex-col flexstart pt-30 pb-11 bg-beige gap-24" id="realizacje">
+        <span class="gap-4 pl-40">
+            <p class="m-0 fs-12 font-inter text-green-800">Realizacje</p>
+            <h1 class="font-mono font-medium fs-48 m-0">Nasze <i>projekty</i></h1>
+        </span>
+        <span width="1440px" height="1475px" id="grid" class="grid" data-masonry='{ "itemSelector": ".grid-item", "columnWidth": 450, "horizontalOrder": true, "gutter": 40 }'>
+            <a target="_blank" href="./PhotoR01.png"><div class="grid-item"><img src="PhotoR01.png"></div></a>
+            <a target="_blank" href="./PhotoR02.png"><div class="grid-item grid-item--height2"><img src="PhotoR02.png" ></div></a>
+            <a target="_blank" href="./PhotoR03.png"><div class="grid-item grid-item--height3"><img src="PhotoR03.png"></div></a>
+            <a target="_blank" href="./PhotoR04.png"><div class="grid-item grid-item--height3"><img src="PhotoR04.png"></div></a>
+            <a target="_blank" href="./PhotoR05.png"><div class="grid-item grid-item--height3"><img src="PhotoR05.png"></div></a>
+            <a target="_blank" href="./PhotoR06.png"><div class="grid-item"><img src="PhotoR06.png"></div></a>
+            <a target="_blank" href="./PhotoR07.png"><div class="grid-item grid-item--height2"><img src="PhotoR07.png"></div></a>
+            <a target="_blank" href="./PhotoR08.png"><div class="grid-item"><img src="PhotoR08.png"></div></a>
+            <a target="_blank" href="./PhotoR09.png"><div class="grid-item grid-item--height2"><img src="PhotoR09.png"></div></a>
+            <img width="100%" height="1000px" class="bg-gradient absolute" id="gradient">
+            <div class="items-center">
+                <button id="Rozwijak" onclick="$grid.masonry( 'appended', '<a target=`_blank` href=`./PhotoR01.png`><div class=`grid-item`><img src=`PhotoR01.png`></div></a>')" ondblclick="Rozwin();" class="text-black fs-16 bg-none border-solid border border-black border-radius-200 px-5.5 pb-3.5 pt-3 button04 flexstart flex gap-2 absolute z-3 left-lot">Rozwiń<img width="16px" height="16px" src="BlackVector.svg"/></button>
+            </div>
+        </span>
+    </div>
+    <!--Instagram-->
+    <div class="bg-grey flex-col align-item-center py-15">
+        <span class="text-grey gap-16 py-30 px-28 bg-green-800 flex-row flex">
+            <h1 class="font-mono font-normal fs-40 ">Zostańmy w kontakcie! <br/>Znajdziesz nas na <i class="font-medium">Instagramie.</i></h1>
+            <span class="flex-col">
+                <p class="font-inter fs-16">Śledź nasze<br/>najnowsze realizacje!</p>
+                <button class="text-green-800 fs-16 bg-grey border-none border-radius-200 px-6 pb-3 pt-2.5 button05" >Instagram</button>
+            </span>
+        </span>
+    </div>
+    <!--Stopka-->
+    <footer class="flex-col gap-30 py-20 px-64 bg-black text-grey">
+        <span class="flex-col gap-15">
+            <span class="justify flex-row flex">
+                <img src="giarddesign(1).svg"/>
+                <span class="gap-6 align-item-center flex-row flex">
+                    <p class="font-inter fs-16">Daj znać, co możemy dla Ciebie zrobić!</p>
+                    <button class="text-grey fs-16 bg-green-800 border-none border-radius-200 px-5.5 pb-3.5 pt-3 button04">Skontaktuj się z nami</button>
+                </span>
+            </span>
+            <div height="1px" class="border-b border-solid border-b-grey">
+            </div>
+            <span class="justify flex">
+                <span class="flex align-item-center gap-12 fs-14 font-inter">
+                    <p class="m-0">Kontakt</p>
+                    <p class="m-0">Instagram</p>
+                    <p class="m-0">Facebook</p>
+                    <p class="m-0">LinkedIn</p>
+                </span>
+                <span class="flex align-item-center gap-12 fs-14 font-inter">
+                    <p class="m-0">000-000-000</p>
+                    <p class="m-0">giarddesign@kontakt.pl</p>
+                </span>
+            </span>
+        </span>
+        <span class="flex-row flex justify fs-16 font-inter">
+            <p class="m-0">Prawa zastrzeżone © 2022</p>
+            <span class="flex align-item-center gap-4">
+                <p class="m-0">made by</p>
+                <img src="adRespect.svg">
+            </span>
+        </span>
+    </footer>
+</body>
+</html>
